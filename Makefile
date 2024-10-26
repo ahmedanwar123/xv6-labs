@@ -289,7 +289,7 @@ tar:
 .PHONY: dist-test dist
 
 zipball:
-    git add .  # Ensure this line starts with a tab
-    git commit -m "Preparing for submission"  # This line should also start with a tab
-    zip -r lab.zip *  # And this line should start with a tab as well
+	git add .  # Ensure this line starts with a tab
+	git commit -m "Preparing for submission"  # This line should also start with a tab
+	zip -r lab.zip *  # And this line should start with a tab as well
 
