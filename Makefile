@@ -289,5 +289,5 @@ tar:
 .PHONY: dist-test dist
 
 zipball:
-	zip -r lab.zip *  # And this line should start with a tab as well
+	zip -r lab.zip *
 
