@@ -287,3 +287,8 @@ tar:
 	(cd /tmp; tar cf - xv6) | gzip >xv6-rev10.tar.gz  # the next one will be 10 (9/17)
 
 .PHONY: dist-test dist
+
+zipball:
+    git add .  # Stages all changes to be committed
+    git commit -m "Preparing for submission"  # Commit changes
+    zip -r lab.zip *  # Create a zip file of the current directory
